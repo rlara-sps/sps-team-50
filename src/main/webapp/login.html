@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login_script.js"></script>
+  </head>
+  <body>
+    <div id="login_form">
+        <h3>Log in below:</h3>
+        <form id="signup">
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="text" id="pwd" name="pwd"><br><br>
+            <input type="submit" value="Login" onclick="putCookie(document.getElementsByTagName('form'));">
+        </form>
+    </div>
+  </body>
+</html>
