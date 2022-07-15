@@ -1,14 +1,20 @@
+package com.google.sps;
+
+
 public class Course {
-    int courseId;
+    String courseId;
     String courseName;
-    String location;
+    public String location;
     String instructorName;
     
 
-    public Course(int courseId, String courseName, String location, String instructorName) {
+    public Course(String courseId, String courseName, String location, String instructorName) {
         this. courseId = courseId;
         this.courseName = courseName;
         this.location = location;
         this.instructorName = instructorName;
     }
+
+
+    
 }
