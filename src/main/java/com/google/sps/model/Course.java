@@ -1,4 +1,4 @@
-package com.google.sps;
+package com.google.sps.model;
 
 
 public class Course {
@@ -13,8 +13,5 @@ public class Course {
         this.courseName = courseName;
         this.location = location;
         this.instructorName = instructorName;
-    }
-
-
-    
+    }  
 }
