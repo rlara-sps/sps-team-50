@@ -14,24 +14,17 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/classes")
 public class ListClassesServlet extends HttpServlet{
 
-    private ArrayList<Course> courseList = new ArrayList<>(List.of(new Course("12", "Network Architecture", "Gross Hall", "Prof John"), new Course("23", "Music Theory", "Rubenstein", "Prof Brooks")));
+    private List<Course> courseList = new ArrayList<>(List.of(new Course("12", "Network Architecture", "Prof John"),
+    new Course("23", "Music Theory", "Prof Brooks")));
     
+    Gson gson = new Gson();
+
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-      String courseListJson = convertToJson(courseList);
+      String courseListJson = gson.toJson(courseList);
       response.setContentType("application/json;");
       response.getWriter().println(courseListJson);
-    }
 
-
-
-    private String convertToJson(ArrayList<Course> courseList) {
-      Gson gson = new Gson();
-      String json = gson.toJson(courseList);
-      return json;
-    }
-    
-
-    
+    }      
 }

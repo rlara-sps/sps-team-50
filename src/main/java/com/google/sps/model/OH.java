@@ -2,6 +2,7 @@ package com.google.sps.model;
 
 public class OH {
     private String ohId;
+    private String courseId;
     private String day;
     private String startTime;
     private String endTime;
@@ -9,8 +10,9 @@ public class OH {
     private String taName;
 
 
-    public OH(String ohId, String day, String startTime, String endTime, String location, String taName) {
+    public OH(String ohId, String courseId, String day, String startTime, String endTime, String location, String taName) {
         this.ohId = ohId;
+        this.courseId = courseId;
         this.day = day;
         this.startTime = startTime;
         this.endTime = endTime;
@@ -20,6 +22,10 @@ public class OH {
 
     public String getohId() {
         return ohId;
+    }
+
+    public String getCourseId() {
+        return courseId;
     }
 
     public String getDay() {

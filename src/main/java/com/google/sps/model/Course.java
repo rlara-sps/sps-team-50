@@ -1,10 +1,12 @@
 package com.google.sps.model;
 
 
+
 public class Course {
     private String courseId;
     private String courseName;
     private String instructorName;
+
     
 
     public Course(String courseId, String courseName, String instructorName) {
