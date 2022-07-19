@@ -16,7 +16,8 @@ public class LoginServlet extends HttpServlet {
 
     Set<String> TAs = new HashSet<String>();
     TAs.addAll(Arrays.asList(
-        new String[] {"TA1", "TA2"}));
+        new String[] {"hchu@sps-program.com", "robertolara@sps-program.com", "eahorlu@sps-program.com", "dsanchez@sps-program.com", 
+    "yuchengwang@sps-program.com"}));
 
     // Get the value entered in the form.
     String email = request.getParameter("email");
